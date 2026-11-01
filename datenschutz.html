@@ -66,6 +66,10 @@ h1, h2, h3 { font-family: var(--font-display); text-transform: uppercase; line-h
 .btns { display: flex; gap: 10px; flex-wrap: wrap; }
 .btn { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; text-transform: uppercase; letter-spacing: .04em; padding: 12px 22px; text-decoration: none; border: 2px solid var(--signal); background: var(--signal); color: var(--signal-fg); cursor: pointer; }
 .btn.ghost { background: transparent; color: var(--ink-fg); }
+.btn.wa { background: #25d366; border-color: #25d366; color: #06301a; }
+.wa-float { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); z-index: 20; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: #25d366; color: #06301a; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-radius: 999px; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
+.wa-float svg { width: 20px; height: 20px; flex: none; }
+.wa-float:hover { filter: brightness(1.05); }
 .btn:hover { filter: brightness(1.07); }
 .dispatch small { display: block; margin-top: 12px; color: var(--ink-muted); font-size: .85rem; }
 
@@ -145,6 +149,8 @@ html { scroll-behavior: smooth; }
 <p>Diese Webseite wird bei der STRATO AG, Otto-Ostrowski-Straße 7, 10249 Berlin, gehostet. Beim Aufruf der Seite speichert der Server automatisch technische Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser). Das ist für den sicheren Betrieb der Seite nötig (Art. 6 Abs. 1 lit. f DSGVO). Die Daten werden nach kurzer Zeit gelöscht.</p>
 <h2>Kontaktaufnahme</h2>
 <p>Wenn Sie uns anrufen oder eine E-Mail schreiben, verarbeiten wir Ihre Angaben (Name, Telefonnummer, Standort, Fahrzeugdaten), um Ihren Auftrag auszuführen (Art. 6 Abs. 1 lit. b DSGVO). Wir geben diese Daten nicht ohne Ihre Zustimmung weiter, außer das ist zur Auftragsausführung nötig.</p>
+<h2>WhatsApp</h2>
+<p>Auf dieser Seite gibt es einen Link zu WhatsApp. Erst wenn Sie darauf klicken, öffnet sich WhatsApp, und Ihre Nachricht wird über WhatsApp (WhatsApp Ireland Limited, Meta) übertragen. Beim bloßen Besuch unserer Seite werden keine Daten an WhatsApp gesendet. Es gilt die Datenschutzerklärung von WhatsApp.</p>
 <h2>Cookies, Schriften, Analyse</h2>
 <p>Diese Seite setzt keine Cookies, nutzt keine Analyse- oder Werbedienste und lädt keine Schriften oder Inhalte von fremden Servern.</p>
 <h2>Ihre Rechte</h2>
