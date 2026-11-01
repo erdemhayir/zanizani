@@ -71,6 +71,9 @@ h1, h2, h3 { font-family: var(--font-display); text-transform: uppercase; line-h
 .btn.wa { background: #25d366; border-color: #25d366; color: #06301a; }
 .wa-float { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: max(16px, env(safe-area-inset-bottom, 0px)); z-index: 20; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: #25d366; color: #06301a; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; border-radius: 999px; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
 .wa-float svg { width: 20px; height: 20px; flex: none; }
+.btn.tg { background: #2aabee; border-color: #2aabee; color: #04293f; }
+.wa-float.tg-float { background: #2aabee; color: #04293f; }
+.wa-float.wa-top { bottom: calc(max(16px, env(safe-area-inset-bottom, 0px)) + 58px); }
 .wa-float:hover { filter: brightness(1.05); }
 .btn:hover { filter: brightness(1.07); }
 .dispatch small { display: block; margin-top: 12px; color: var(--ink-muted); font-size: .85rem; }
@@ -169,6 +172,7 @@ html { scroll-behavior: smooth; }
       <div class="btns">
         <a class="btn" href="tel:+491606080666">Jetzt anrufen</a>
         <a class="btn wa" href="https://wa.me/491606080666?text=Hallo%2C%20ich%20brauche%20Hilfe.%20Mein%20Standort%3A%20" target="_blank" rel="noopener">WhatsApp schreiben</a>
+        <a class="btn tg" href="https://t.me/+491606080666" target="_blank" rel="noopener">Telegram schreiben</a>
         <button class="btn ghost" id="copy" type="button">Nummer kopieren</button>
       </div>
       <small id="copynote">Auch nachts, am Wochenende und an Feiertagen.</small>
@@ -253,15 +257,21 @@ html { scroll-behavior: smooth; }
       <h3>E-Mail</h3>
       <p>zanizani55@yahoo.de</p>
       <p><a href="https://wa.me/491606080666?text=Hallo%2C%20ich%20brauche%20Hilfe.%20Mein%20Standort%3A%20" target="_blank" rel="noopener" style="color:var(--sun)">WhatsApp: 0160 6080666</a></p>
+      <p><a href="https://t.me/+491606080666" target="_blank" rel="noopener" style="color:var(--sun)">Telegram: 0160 6080666</a></p>
       <p>Anschrift &amp; Steuernummer: <span class="ph">[ergänzen]</span></p>
     </div>
     <div class="fine">&copy; Abschleppdienst &amp; KFZ Transport 24. <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/491606080666?text=Hallo%2C%20ich%20brauche%20Hilfe.%20Mein%20Standort%3A%20" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben">
+<a class="wa-float wa-top" href="https://wa.me/491606080666?text=Hallo%2C%20ich%20brauche%20Hilfe.%20Mein%20Standort%3A%20" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
   WhatsApp
+</a>
+
+<a class="wa-float tg-float" href="https://t.me/+491606080666" target="_blank" rel="noopener" aria-label="Per Telegram schreiben">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 11l18-8-4 18-5-6-3 4v-6z"/></svg>
+  Telegram
 </a>
 
 <script>
